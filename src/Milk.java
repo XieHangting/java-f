@@ -11,6 +11,43 @@ public class Milk {
     // 保质期
     private int shelfLife;
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
+    public String getBrand() {
+        return brand;
+    }
 
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setShelfLife(int shelfLife) {
+        this.shelfLife = shelfLife;
+    }
+
+    public int getShelfLife() {
+        return shelfLife;
+    }
+
+    public void setDataInProduced(int dataInProduced) {
+        this.dataInProduced = dataInProduced;
+    }
+
+    public int getDataInProduced() {
+        return dataInProduced;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
 }
