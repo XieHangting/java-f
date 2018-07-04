@@ -11,6 +11,14 @@ public class Milk {
     // 保质期
     private int shelfLife;
 
+    public Milk(String brand,String type,int volume,int dataInProduced,int shelfLife){
+        this.brand = brand;
+        this.type = type;
+        this.volume = volume;
+        this.dataInProduced = dataInProduced;
+        this.shelfLife = shelfLife;
+    }
+
     public void setBrand(String brand) {
         this.brand = brand;
     }

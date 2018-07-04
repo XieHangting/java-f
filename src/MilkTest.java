@@ -1,15 +1,13 @@
 public class MilkTest {
     public static void main(String[] args) {
-        Milk a = new Milk();
-        a.setBrand("蒙牛");
-        System.out.println(a.getBrand());
-        a.setDataInProduced(2018);
-        System.out.println(a.getDataInProduced());
-        a.setShelfLife(24);
-        System.out.println(a.getShelfLife());
-        a.setType("pure");
-        System.out.println(a.getType());
-        a.setVolume(250);
-        System.out.println(a.getVolume());
+        String type = "pure";
+
+        Milk a = new Milk("蒙牛",type,250,2018,24);
+        Milk b = new Milk("伊利",type,250,2018,24);
+        Milk c = new Milk("蒙牛",type,250,2018,24);
+
+        System.out.println(a.getBrand()+" | "+a.getType()+" | "+a.getVolume()+" | "+a.getDataInProduced()+" | "+a.getShelfLife());
+        System.out.println(a.getBrand()+" | "+b.getType()+" | "+b.getVolume()+" | "+b.getDataInProduced()+" | "+b.getShelfLife());
+        System.out.println(a.getBrand()+" | "+c.getType()+" | "+c.getVolume()+" | "+c.getDataInProduced()+" | "+c.getShelfLife());
     }
 }

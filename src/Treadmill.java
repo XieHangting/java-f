@@ -14,6 +14,16 @@ public class Treadmill {
     // 功率
     private int power;
 
+    public Treadmill(String brand,int publishTime,String material,int floorSpace,String color,String productCode,int power){
+        this.brand = brand;
+        this.publishTime = publishTime;
+        this.material = material;
+        this.floorSpace = floorSpace;
+        this.color = color;
+        this.productCode = productCode;
+        this.power = power;
+    }
+
     public void setBrand(String brand) {
         this.brand = brand;
     }
