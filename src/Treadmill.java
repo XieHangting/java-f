@@ -13,15 +13,18 @@ public class Treadmill {
     private String productCode;
     // 功率
     private int power;
+    // 是否商场同款
+    private boolean isMall;
 
-    public Treadmill(String brand,int publishTime,String material,int floorSpace,String color,String productCode,int power){
+    public Treadmill(String brand,int publishTime,String material,int floorSpace,String color,String productCode,int power,boolean isMall){
         this.brand = brand;
         this.publishTime = publishTime;
         this.material = material;
         this.floorSpace = floorSpace;
         this.color = color;
         this.productCode = productCode;
-        this.power = power;
+        this.isMall = isMall;
+        this.power  = power;
     }
 
     public void setBrand(String brand) {
@@ -56,13 +59,6 @@ public class Treadmill {
         return material;
     }
 
-    public void setPower(int power) {
-        this.power = power;
-    }
-
-    public int getPower() {
-        return power;
-    }
 
     public void setProductCode(String productCode) {
         this.productCode = productCode;
@@ -78,5 +74,21 @@ public class Treadmill {
 
     public int getPublishTime() {
         return publishTime;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setMall(boolean mall) {
+        isMall = mall;
+    }
+
+    public boolean isMall() {
+        return isMall;
     }
 }
